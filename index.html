@@ -1,49 +1,93 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>LUCKY'S</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-    <!----------------------------------------------header----------------------------------------------------->
-      <header>
-        <img class="logo" src="images/logo.png" alt="logo">
-        <ul>
-            <li><a href="allcards.html">All cards</a></li>
-            <li><a href="terms.html">Terms</a></li>
-            <li><a href="contact.html">Contact us</a></li>
-        </ul>
-      </header>
 
-      <!----------------------------------------------main----------------------------------------------------->
-    <main>
-      <button type="button" class="btn btn-primary">Primary</button>
+<head>
+  <meta charset="utf-8">
+  <title>LUCKY'S</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 
-      <h1>choose your game<br> and start to play!</h1>
-      <div class="casino">
-        <p>Casino card</p>
-      <img class="casino card img" src="images/casino card img.png" alt="casino img">
-      </div>
+</head>
 
-      <div class="basketball">
-        <p>basketball card</p>
-      <img class="basketball card img" src="images/basketball card img.png" alt="basketball img">
+<body>
+  <!----------------------------------------------header----------------------------------------------------->
+  <header>
+          <div id="navbar">
+          <a href="index.html" id="logo"><img class="logo-img" src="images/logo.png" alt="logo"><a>
+          <div id="navbar-right">
+          <a href="#all-cards">All Cards</a>
+          <a href="terms.html">Terms</a>
+           <a href="contact.html">Contact Us</a>
+  </div>
+</div>
+   
+  </header>
+
+  <!----------------------------------------------main----------------------------------------------------->
+  <main>
+    <div class="main-header">
+      <h1 class="heder1">Today is your lucky day! <br>choose your game<br> and start to play</h1>
+      <a href="#all-cards" class="btn btn-secondary btn-lg btn-block" role="button" aria-pressed="true">Take me to my lucky
+        card</a>
     </div>
 
-    <div class="zodiac">
-      <p>zodiac card</p>
-      <img class="zodiac card img" src="images/zodiac card img.png" alt="zodiac img">
+    <h2 class="allcards">All Card<br><hr></h2>
+    <div id="all-cards">
+      <div class="row">
+        <div class="col-4">
+          <div class="card casino-card">
+            <div class="card-side card-side-front">
+              <img class="img casino" src="images/casino card img.png" alt="casino img"> 
+            </div>
+            <div class="card-side card-side-back">
+              <button type="button" class="btn btn-primary btn-lg btn-block">Start Play</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card basketball-card">
+            <div class="card-side card-side-front">
+              <img class="img basketball" src="images/basketball card img.png" alt="basketball img"> 
+            </div>
+            <div class="card-side card-side-back">
+              <button type="button" class="btn btn-primary btn-lg btn-block">Start Play</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card zodiac-card">
+            <div class="card-side card-side-front">
+              <img class="img zodiac" src="images/zodiac card img.png" alt="zodiac img"> 
+            </div>
+            <div class="card-side card-side-back">
+              <button type="button" class="btn btn-primary btn-lg btn-block">Start Play</button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    
     </div>
   </main>
-      <!----------------------------------------------footer----------------------------------------------------->
+  <!----------------------------------------------footer----------------------------------------------------->
 
   <footer>
-    
+    <p>© 2021 Noy Weizman</p>
   </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-  </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
